@@ -6,7 +6,7 @@ setTimeout(function(){
 
 
 var calculate = function() {
-  var total_price = document.getElementById('textbox_id').value;
+  var total_price = document.getElementById('total_price').value;
   var total_shipment = document.getElementById('total_ship').value; 
   var product_price = document.getElementById('product_price').value; 
   document.getElementById('result').innerHTML = product_price;
