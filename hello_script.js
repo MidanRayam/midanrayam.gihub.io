@@ -12,5 +12,6 @@ var calculate = function() {
   var shipment_rate = total_shipment/total_price;
   var shipment_cost = product_price*shipment_rate;
   var product_price_with_shiment = product_price + shipment_cost;
-  document.getElementById('result').innerHTML = "Shipment cost: "+ shipment_cost + "Product price including shipment: " + product_price_with_shiment;
+  document.getElementById('result').innerHTML = "Shipment cost: "+ Math.round(shipment_cost * 100) / 100
+ + " Product price including shipment: " + Math.round(product_price_with_shiment * 100) / 100;
 }
